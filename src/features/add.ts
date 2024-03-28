@@ -1,9 +1,8 @@
 /**
- * 2つの数値を足し合わせて結果を返します。
- * @param num1 足し合わせる最初の数値。
- * @param num2 足し合わせる2番目の数値。
- * @returns 足し合わせた結果の数値。
+ * 数値を足し合わせます。
+ * @param numbers 足し合わせる数値または数値の配列。
+ * @returns 数値の合計値。
  */
-export function add(num1: number, num2: number): number {
-    return num1 + num2;
+export function add(...numbers: number[]): number {
+    return numbers.reduce((sum, num) => sum + num, 0);
 }
