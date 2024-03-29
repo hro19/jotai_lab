@@ -29,5 +29,12 @@ describe('getResource', () => {
         const language: any = 'ch';
         expect(() => getResource(language)).toThrowError('Invalid language');
     });
+
+    it('直接文字を返す', () => {
+        const language: LanguageType = 'ja';
+        const { Hello } = getResource(language);
+        expect(Hello).toEqual('こんにちは');
+    });
+
 });
 
