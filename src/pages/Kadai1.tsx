@@ -6,7 +6,7 @@ import { findIdCircle } from "../features/findIdCircle";
 import { circleType } from "../types/circle";
 
 const Kadai1 = () => {
-  const [count] = useAtom(countAtom);
+  const [count,setCount] = useAtom(countAtom);
   const [doubledCount] = useAtom(doubledAtom);
   const circles:circleType[]  = [
     { circleId: 1, x: 10, y: 20, figure: "circle" },
