@@ -10,3 +10,9 @@ const defaultBentos = [
 export const bentosAtom = atom<BentoType[]>(defaultBentos);
 
 export const maxBentoAtom = atom((get) => get(bentosAtom).reduce(function(a_bento:BentoType,b_bento:BentoType){return a_bento.num < b_bento.num ? b_bento : a_bento;}));
+
+export const setAddBento = atom(null, (get, set, newBento: BentoType) => {
+    const currentBentos = get(bentosAtom);
+    const updatedBentos = [...currentBentos, newBento];
+    set(bentosAtom, updatedBentos);
+});
