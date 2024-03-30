@@ -1,27 +1,24 @@
-type OrderType = {
-    dish: string;
-    num: number;
-};
+import { BentoType } from "../types/bento";
 
-const orders:OrderType[] = [
+export const bentos:BentoType[] = [
     {dish:"唐揚げ",num:10},
     {dish:"唐揚げ",num:11},
     {dish:"唐揚げ",num:6}
 ];
 
 //表示関数
-const show = (order:OrderType,index:number) => {
-    console.log("【"+index+"】" + order.dish +order.num + "個");
+export const show = (bento:BentoType,index:number) => {
+    console.log("【"+index+"】" + bento.dish +bento.num + "個");
 };
 //中身を全て表示
-const showAll = (orders:OrderType[]) => {
-    orders.map(show);
+export const showAll = (bentos:BentoType[]) => {
+    bentos.map(show);
 };
 
-showAll(orders);
+showAll(bentos);
 
 //唐揚げ数最大
-const maxBento = orders.reduce(function(a:OrderType,b:OrderType){return a.num < b.num ? b : a;});
+export const maxBento = bentos.reduce(function(a_bento:BentoType,b_bento:BentoType){return a_bento.num < b_bento.num ? b_bento : a_bento;});
 
 //一つ食べる
 maxBento.num--;
