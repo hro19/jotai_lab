@@ -1,4 +1,4 @@
-import { add } from '../features/add';
+import { add } from '../../features/add';
 
 describe('add関数のテスト', () => {
     it('足し算その1', () => {

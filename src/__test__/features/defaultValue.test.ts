@@ -1,4 +1,4 @@
-import { culculateAddTax } from "../features/defaultValue";
+import { culculateAddTax } from "../../features/defaultValue";
 
 describe("culculateAddTaxの単体テスト", () => {
   it("should calculate the sum with tax", () => {

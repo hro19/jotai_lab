@@ -1,4 +1,4 @@
-import { getResource, LanguageType } from '../features/indexReference';
+import { getResource, LanguageType } from '../../features/indexReference';
 
 describe('getResource', () => {
     it('should return the correct resource for the "en" language', () => {

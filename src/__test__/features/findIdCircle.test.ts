@@ -1,5 +1,5 @@
-import { circleType } from "../types/circle";
-import { findIdCircle } from "../features/findIdCircle";
+import { circleType } from "../../types/circle";
+import { findIdCircle } from "../../features/findIdCircle";
 
 describe("findIdCircleのテスト", () => {
     const circles:circleType[]  = [

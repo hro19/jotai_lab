@@ -3,7 +3,7 @@ import { Button,ButtonGroup, Center } from "@yamada-ui/react";
 import useCounter from "../hooks/useCounter";
 
 function Kadai2() {
-  const {count, increase, decrease,isDecreaseDisable} = useCounter();
+  const {count, increase, decrease, isDecreaseDisable} = useCounter();
   return (
     <>
       <NavWrap pageTitle="課題2" />
